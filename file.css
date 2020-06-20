@@ -1,0 +1,265 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clear:before,
+.clear:after {
+    content: '';
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+img {max-width:100%; width:auto !important;}
+
+body {background:#fff;font-family: "Helvetica" !important;}
+body ul {list-style: none;margin:0;padding:0;} 
+
+div.Titolo {color:#fff;margin:0 auto;max-width:983px;text-transform:uppercase;margin-top:15px;background:black;padding-left:15px;padding-top:11px;padding-bottom:8px;line-height:21px;font-family:"Helvetica";}
+
+div.Titolo3 {color:#fff;margin:0 auto;max-width:983px;text-transform:
+uppercase;margin-top:0px;background:black;padding-left:15px;padding-top:11px;
+padding-bottom:8px;line-height:21px;font-family:"Helvetica";}
+
+div.Descrizione3 {color:#222;margin:0 auto;max-width:983px;margin-top:0px;background:#eaeaea;padding-right:15px;padding-left:15px;padding-top:11px;
+padding-bottom:8px;line-height:21px;font-family:"Helvetica";font-size:14px;}
+
+
+div.ContentBox {margin:0 auto;max-width:983px;margin-bottom:15px;}
+
+div.product-gallery {float:left;width:50%;}
+div.Foto {float:left;width:50%;}
+
+
+/*Colonna destra template*/
+
+div.Colonnabox {float:right;background:transparent;width:50%;margin-top:10px;padding-left: 30px;}
+
+div.Titolo2 {font-weight:bold;color:#222;font-size:18px;font-family:"Helvetica";text-transform:uppercase;margin-top:10px;}
+div.Descrizione2 {color:#222;line-height:21px;font-family:"Helvetica";font-size:14px;
+padding-top:10px;padding-bottom:10px;border-top:1px solid black;text-align:justify;
+border-bottom:1px solid black;margin-top:10px;margin-bottom:10px;}
+
+
+div.Prezzo {background:black; color:#fff;padding:15px;text-align:center;font-size:18px;margin-top:20px;margin-bottom:20px;}
+div.Prezzo span {color:#fff;font-weight:bold;}
+
+div.Credits {margin-left:auto;margin-right:auto;margin-top:0px;font-size:9px;color:#222; font-family:"Helvetica";}
+div.Credits a {margin-left:auto;margin-right:auto;font-size:9px; color:#222; text-decoration:none; font-family:"Helvetica";}
+div.Credits a:hover {margin-left:auto;margin-right:auto;font-size:9px; color:#ff7f2a; text-decoration:none; font-family:"Helvetica";}
+
+#pulsantiera {
+    max-width: 983px;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+}
+
+#pulsantiera label{
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 2px;
+    padding: 15px 20px;
+    text-align: left;}
+
+input {display: none;}
+
+.main {
+    margin: 0 auto;
+    max-width: 100%;
+    min-width: 320px;
+}
+.contentblock {
+    background: #fff none repeat scroll 0 0;
+    color: #222;
+    margin-bottom:15px;
+}
+
+.contentblock p {margin-top:0px;font-family: "Helvetica";font-size:14px;line-height:20px !important;color:#000;}
+.contentblock p strong {color:black;}
+
+.contentblock p strong a {text-decoration:none !important;color:black !important;font-weight:Bold;}
+
+.contentblock p a {text-decoration:none !important;color:black !important;font-weight:Bold;}
+.contentblock p a:hover {text-decoration:none;color:#000 !important;font-weight:Bold;}
+
+.contentblock > div {
+    display: none;
+	padding: 15px;
+}
+input {
+    display: none;
+}
+
+#pulsantiera label {
+	font-family:"Helvetica";
+	text-transform:uppercase;
+	color:#fff;
+    background: #5d6f8f;
+    display:inline-block;
+    border:0px;
+    margin:0px;
+    padding-top: 11px;
+    padding-bottom: 8px;
+    width:19.59%; 
+    text-align: center;
+}
+#pulsantiera label:hover {
+    color: #fff;
+    cursor: pointer;
+}
+#pulsantiera input:checked + label {
+    background: black none repeat scroll 0 0;
+    color: #fff;
+}
+.mainline > label {
+    width: 100%;
+}
+#tab01:checked ~ .contentblock #content1, #tab02:checked ~ .contentblock #content2,
+#tab03:checked ~ .contentblock #content3, #tab04:checked ~ .contentblock #content4,
+#tab05:checked ~ .contentblock #content5, #tab06:checked ~ .contentblock #content6 {
+    display: block;
+}
+#tab07:checked ~ .contentblock #content7, #tab08:checked ~ .contentblock #content8,
+#tab09:checked ~ .contentblock #content9, #tab10:checked ~ .contentblock #content10,
+#tab11:checked ~ .contentblock #content11, #tab12:checked ~ .contentblock #content12 {
+    display: block;
+    width: 100%;
+}
+
+.product-gallery {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.product-gallery .gallery-img-container {
+    position: relative;
+    padding-top: 100%;
+}
+
+.product-gallery .gallery-img-container > img{
+    position: absolute;
+    left: 0;
+    top: -15px;
+    max-height: 100% !important;
+    transition: all 0.5s;
+}
+
+.product-gallery input[name='slide_switch'] {
+    display: none;
+}
+
+.product-gallery label {
+    width: 20%;
+    float: left;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0.6;
+}
+
+.product-gallery label img {
+    display: block;
+}
+
+.product-gallery input[name='slide_switch']:checked+label {
+    opacity: 1;
+}
+
+.product-gallery input[name='slide_switch'] ~ img {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.product-gallery input[name='slide_switch']:checked+label+img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@media (max-width: 820px) and (min-width: 501px) {
+
+    #pulsantiera {
+        position: relative;
+    }
+
+    #pulsantiera > label {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        margin-top: 15px;
+    }
+
+    #pulsantiera label.tab02 {
+        top: 40px;
+    }
+
+    #pulsantiera label.tab03 {
+        top: 80px;
+    }
+
+    #pulsantiera label.tab04 {
+        top: 120px;
+    }
+
+    #pulsantiera label.tab05 {
+        top: 160px;
+    }
+
+}
+
+@media (max-width: 820px) and (min-width: 601px) {
+
+    #pulsantiera > label {
+        width: 200px;
+    }
+
+    #pulsantiera .contentblock {
+        padding-left: 220px;
+    }
+
+}
+
+@media (max-width: 600px) and (min-width: 501px) {
+
+    #pulsantiera > label {
+        width: 150px;
+    }
+
+    #pulsantiera .contentblock {
+        padding-left: 170px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #pulsantiera > label {
+        display: block;
+        width: 100%;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    div.product-gallery,
+    div.Foto,
+    div.Colonnabox {
+        width: auto;
+        float: none;
+        clear: both;
+    }
+
+    div.Colonnabox {
+        padding: 0;
+    }
+
+}
